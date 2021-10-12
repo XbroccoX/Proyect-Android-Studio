@@ -11,16 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val texto = findViewById<TextView>(R.id.txt_output)
-        val boton = findViewById<Button>(R.id.btn_accion)
-        boton.setOnClickListener{
-            navegarSegundaActivity()
-        }
     }
 
-    private fun navegarSegundaActivity(){
-        val intent = Intent(this, SegundaActivity::class.java)
-        intent.putExtra("nombre", "Curso de Android")
-        startActivity(intent)
-    }
 }

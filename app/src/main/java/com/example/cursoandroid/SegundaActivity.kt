@@ -14,19 +14,6 @@ class SegundaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_segunda)
-
-        val button = findViewById<Button>(R.id.btn_accion)
-        val texto = findViewById<TextView>(R.id.txt_output)
-
-        intent.extras?.let{bundle->
-            nombre = bundle.getString("nombre")
-        }
-
-        texto.text = nombre
-
-        button.setOnClickListener{
-            finish()
-        }
     }
 
 
